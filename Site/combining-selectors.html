@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combining Selectors in css</title>
+
+    <style>
+
+        /* For Class highlight */
+        .highlight{
+
+            background-color: bisque;
+        }
+
+        /* All P elements with Class highlight */
+
+        p.highlight {
+            
+            font-style: italic;
+        }
+
+        /* All the elements with class highlight and aswell as class "mainpoint" */
+
+        /* for styling a class we use "." and then the class name without a space in between them */
+
+        .highlight.mainpoint {
+
+            color: red;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <h1 class="highlight">Elements with class selector</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, temporibus rerum! Id saepe reprehenderit quibusdam libero quae. Saepe nam beatae facilis in soluta et, necessitatibus expedita quaerat voluptatem consequatur. Magni.</p>
+    
+    <p class="highlight"> this P is with a class="HIGHLIGHT"</p>
+
+    <div class="mainpoint highlight">This is the mainpoint of the entire article</div> 
+</body>
+</html>

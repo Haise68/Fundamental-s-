@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-model</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+        }
+        #box {
+            padding: 10px;
+            border: 3px solid black;
+            margin: 40px;
+            width: 400px;
+            /* the padding and border also addes up the width */
+            box-sizing: border-box;
+            justify-content: center;
+            background-color: hotpink;
+        }
+        #content {
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <div id="box">
+        <div id="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem vitae dignissimos rerum distinctio tempora.</div>
+    </div>
+</body>
+</html>
